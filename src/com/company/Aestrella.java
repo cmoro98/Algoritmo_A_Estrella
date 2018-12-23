@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
 import static com.company.Utilidades.distancia;
 
 //Algoritmo A*
-/*Dado que lo que en este ejercicio se pretende ser didactico, se explicaran cosas
+/*Dado que lo que en este ejercicio se pretende ser didáctico, se explicaran cosas
  * redundantes para el programador conocedor.  */
 
 /*Diferencia entre algoritmo Path Finding y Dijkstra.
@@ -102,7 +102,7 @@ public class Aestrella {
                                 adyacente.setPesoFn();
                                 adyacente.setPadre(actual);
                             }
-                        } else {//Paso 8 Si el nodo no esta ni en la abierta ni cerrada
+                        } else {//Paso 7b Si el nodo no esta ni en la abierta ni cerrada
                             //calcular peso y añadir de forma ordenada
                             adyacente.setPadre(actual);
                             adyacente.setPesoGn((adyacente.getPesoGn() + actual.getPesoGn() + distancia(actual, adyacente, velocidadDeLosNodos)));
